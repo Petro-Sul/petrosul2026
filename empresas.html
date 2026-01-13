@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETROSUL 2026 - Inicio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        petro: {
+                            light: '#2E8B57', /* Verde Bandeira/Petróleo Claro */
+                            DEFAULT: '#006400', /* Verde Bandeira Escuro */
+                            dark: '#004d00',
+                            deep: '#013220', /* Quase preto */
+                        },
+                        rs: {
+                            yellow: '#FFD700', /* Amarelo Ouro */
+                            red: '#CE1126', /* Vermelho Bandeira */
+                        },
+                        gray: {
+                            light: '#F3F4F6',
+                            medium: '#9CA3AF',
+                            dark: '#374151'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'seismic': "url(\"data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.735-5.197-1.52-7.856-2.493C65.7 13.633 60.1 12 50 12c-10.272 0-15.362 1.222-24.629 4.928C24.225 17.38 22.95 17.844 21.69 18.28c-2.68 1.144-6.38 2.05-11.69 2.05h11.184zm-4.72-6.524c-2.613-.675-5.35-1.428-8.157-2.316c-.056-.018-.112-.036-.168-.054C3.882 9.554 2.21 9.16 0 8.956V8c2.404.223 4.28.643 7.82 1.763c.27.086.545.174.825.264c2.673.856 5.28 1.573 7.72 2.213c9.19 2.41 15.533 3.76 23.635 3.76c8.102 0 14.445-1.35 23.635-3.76c2.613-.675 5.35-1.428 8.157-2.316c.056-.018.112-.036.168-.054C76.118 8.446 77.79 8.05 80 7.846v.954c-2.404.223-4.28.643-7.82 1.763c-.27.086-.545.174-.825.264c-2.673.856-5.28 1.573-7.72 2.213c-9.19 2.41-15.533 3.76-23.635 3.76c-8.102 0-14.445-1.35-23.635-3.76z' fill='%232E8B57' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E\")",
+                        'grid-tech': "radial-gradient(#2E8B57 1px, transparent 1px)"
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-dark font-sans antialiased overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 bg-white shadow-md border-b border-petro-light/20">
+    <div class="rs-ribbon w-full"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            
+            <div class="flex-shrink-0 flex items-center gap-3">
+                <img src="assets/logo.png" alt="Logo PETROSUL" class="w-10 h-10 object-contain">
+                <div>
+                    <span class="font-display font-bold text-2xl text-petro-dark tracking-tight">PETROSUL</span>
+                    <span class="block text-xs text-gray-500 font-semibold tracking-widest uppercase">XIV&nbsp;</span>
+                </div>
+            </div>
+
+            <div class="hidden md:flex space-x-2 items-center">
+                <a href="index.html" class="px-4 py-2 bg-petro text-white rounded-md font-semibold hover:bg-petro-dark transition shadow-lg shadow-petro/20 text-sm">
+                    Inicio
+                </a>
+                <a href="#" class="px-4 py-2 bg-petro text-white rounded-md font-semibold hover:bg-petro-dark transition shadow-lg shadow-petro/20 text-sm">
+                    Empresas Parceiras
+                </a>
+                <a href="quemsomos.html" class="px-4 py-2 bg-petro text-white rounded-md font-semibold hover:bg-petro-dark transition shadow-lg shadow-petro/20 text-sm">
+                    Quem Somos
+                </a>
+                <a href="edicoes.html" class="px-4 py-2 bg-petro text-white rounded-md font-semibold hover:bg-petro-dark transition shadow-lg shadow-petro/20 text-sm">
+                    Edições passadas
+                </a>
+                <a href="parceiro.html" class="px-4 py-2 bg-petro text-white rounded-md font-semibold hover:bg-petro-dark transition shadow-lg shadow-petro/20 text-sm">
+                    Seja Parceiro
+                </a>
+            </div>
+
+            <div class="flex md:hidden">
+                <button onclick="toggleMobileMenu()" type="button" class="text-petro hover:text-petro-dark p-2 focus:outline-none">
+                    <i class="fa-solid fa-bars text-3xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-xl absolute w-full left-0 z-40">
+        <div class="px-4 pt-4 pb-6 flex flex-col space-y-3">
+            <a href="index.html" onclick="toggleMobileMenu()" class="block w-full text-center px-5 py-3 bg-petro text-white rounded-md font-semibold hover:bg-petro-dark transition">
+                Inicio
+            </a>
+            <a href="#" onclick="toggleMobileMenu()" class="block w-full text-center px-5 py-3 bg-petro text-white rounded-md font-semibold hover:bg-petro-dark transition">
+                Empresas Parceiras
+            </a>
+            <a href="quemsomos.html" onclick="toggleMobileMenu()" class="block w-full text-center px-5 py-3 bg-petro text-white rounded-md font-semibold hover:bg-petro-dark transition">
+                Quem Somos
+            </a>
+            <a href="edicoes.html" onclick="toggleMobileMenu()" class="block w-full text-center px-5 py-3 bg-petro text-white rounded-md font-semibold hover:bg-petro-dark transition">
+                Edições passadas
+            </a>
+            <a href="parceiro.html" onclick="toggleMobileMenu()" class="block w-full text-center px-5 py-3 bg-petro-dark text-white border-2 border-petro rounded-md font-semibold hover:bg-petro transition">
+                Seja Parceiro
+            </a>
+        </div>
+    </div>
+</nav>
+
+<script>
+    function toggleMobileMenu() {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+    }
+</script>
+
+    <header class="relative pt-32 pb-20 hero-gradient text-white overflow-hidden">
+        <div class="absolute inset-0 bg-seismic opacity-30"></div>
+        <div class="absolute top-0 right-0 w-96 h-96 bg-petro-light rounded-full mix-blend-multiply filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-72 h-72 bg-rs-yellow rounded-full mix-blend-overlay filter blur-3xl opacity-10 transform -translate-x-1/2 translate-y-1/2"></div>
+
+        <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="font-display text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Conheça nossos <span class="text-transparent bg-clip-text bg-gradient-to-r from-rs-yellow to-white">patrocinadores</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto font-light leading-relaxed">
+                Aqueles que ajudam a tornar tudo isso possivel.
+            </p>
+        </div>
+        
+        <div class="absolute bottom-0 w-full">
+            </div>
+    </header>
+
+   <section id="patrocinadores" class="py-16 bg-gray-50 relative border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center mb-12">
+                <span class="text-petro font-bold tracking-widest text-xs uppercase mb-2 block">Parceiros</span>
+                <h2 class="font-display text-3xl font-bold text-gray-900">Patrocinadores do Evento</h2>
+                <div class="w-24 h-1 bg-rs-yellow mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex flex-col items-center text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="h-24 w-full flex items-center justify-center mb-4 border-b border-gray-50 pb-4">
+                        <img src="https://via.placeholder.com/150x80?text=LOGO+1" alt="Logo Patrocinador 1" class="max-h-16 object-contain grayscale group-hover:grayscale-0 transition duration-300">
+                    </div>
+                    
+                    <h3 class="font-display font-bold text-lg text-gray-800 mb-1">EcoEnergy Sul</h3>
+                    <p class="text-sm text-gray-500 flex items-center gap-2 mb-6">
+                        <i class="fa-solid fa-phone text-petro text-xs"></i> (51) 3333-1234
+                    </p>
+
+                    <div class="flex gap-3 w-full mt-auto">
+                        <a href="https://site-da-empresa.com" target="_blank" class="flex-1 py-2 px-4 rounded-lg bg-gray-50 text-gray-600 text-sm font-semibold hover:bg-petro hover:text-white transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-globe"></i> Site
+                        </a>
+                        <a href="https://instagram.com/empresa" target="_blank" class="w-10 h-10 rounded-lg bg-gray-50 text-gray-600 flex items-center justify-center hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-red-500 hover:to-purple-500 hover:text-white transition">
+                            <i class="fa-brands fa-instagram text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex flex-col items-center text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="h-24 w-full flex items-center justify-center mb-4 border-b border-gray-50 pb-4">
+                        <img src="https://via.placeholder.com/150x80?text=LOGO+2" alt="Logo Patrocinador 2" class="max-h-16 object-contain grayscale group-hover:grayscale-0 transition duration-300">
+                    </div>
+                    
+                    <h3 class="font-display font-bold text-lg text-gray-800 mb-1">PetroTech Solutions</h3>
+                    <p class="text-sm text-gray-500 flex items-center gap-2 mb-6">
+                        <i class="fa-solid fa-phone text-petro text-xs"></i> (53) 99999-8888
+                    </p>
+
+                    <div class="flex gap-3 w-full mt-auto">
+                        <a href="#" class="flex-1 py-2 px-4 rounded-lg bg-gray-50 text-gray-600 text-sm font-semibold hover:bg-petro hover:text-white transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-globe"></i> Site
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-lg bg-gray-50 text-gray-600 flex items-center justify-center hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-red-500 hover:to-purple-500 hover:text-white transition">
+                            <i class="fa-brands fa-instagram text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex flex-col items-center text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="h-24 w-full flex items-center justify-center mb-4 border-b border-gray-50 pb-4">
+                        <img src="https://via.placeholder.com/150x80?text=LOGO+3" alt="Logo Patrocinador 3" class="max-h-16 object-contain grayscale group-hover:grayscale-0 transition duration-300">
+                    </div>
+                    
+                    <h3 class="font-display font-bold text-lg text-gray-800 mb-1">Engenharia RS</h3>
+                    <p class="text-sm text-gray-500 flex items-center gap-2 mb-6">
+                        <i class="fa-solid fa-phone text-petro text-xs"></i> (51) 3030-5050
+                    </p>
+
+                    <div class="flex gap-3 w-full mt-auto">
+                        <a href="#" class="flex-1 py-2 px-4 rounded-lg bg-gray-50 text-gray-600 text-sm font-semibold hover:bg-petro hover:text-white transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-globe"></i> Site
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-lg bg-gray-50 text-gray-600 flex items-center justify-center hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-red-500 hover:to-purple-500 hover:text-white transition">
+                            <i class="fa-brands fa-instagram text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex flex-col items-center text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="h-24 w-full flex items-center justify-center mb-4 border-b border-gray-50 pb-4">
+                        <img src="https://via.placeholder.com/150x80?text=LOGO+4" alt="Logo Patrocinador 4" class="max-h-16 object-contain grayscale group-hover:grayscale-0 transition duration-300">
+                    </div>
+                    
+                    <h3 class="font-display font-bold text-lg text-gray-800 mb-1">Inovação Offshore</h3>
+                    <p class="text-sm text-gray-500 flex items-center gap-2 mb-6">
+                        <i class="fa-solid fa-phone text-petro text-xs"></i> (21) 98888-7777
+                    </p>
+
+                    <div class="flex gap-3 w-full mt-auto">
+                        <a href="#" class="flex-1 py-2 px-4 rounded-lg bg-gray-50 text-gray-600 text-sm font-semibold hover:bg-petro hover:text-white transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-globe"></i> Site
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-lg bg-gray-50 text-gray-600 flex items-center justify-center hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-red-500 hover:to-purple-500 hover:text-white transition">
+                            <i class="fa-brands fa-instagram text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+
+    <footer id="contato" class="bg-petro-deep text-white border-t-4 border-rs-red">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="assets/logo.png" alt="Logo PETROSUL" class="w-8 h-8 object-contain">
+                        
+                        <span class="font-display font-bold text-xl tracking-tight">PETROSUL</span>
+                    </div>
+                    <p class="text-gray-300 text-sm max-w-md font-light">
+                        O maior evento de integração acadêmica e industrial do setor de energia no Sul do Brasil. Junte-se a nós em 2025.
+                    </p>
+                </div>
+                <div class="md:text-right">
+                    <h4 class="font-bold text-lg text-rs-yellow mb-2">Fale com a Organização</h4>
+                    <p class="text-gray-300 mb-1"><i class="fa-solid fa-envelope mr-2 text-xs"></i> petrosul@petrosul.com.br</p>
+                    
+                    <div class="flex md:justify-end gap-4 mt-6">
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-rs-red hover:text-white transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-rs-red hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
+    <i class="fa-brands fa-linkedin-in"></i>
+</a>
+
+<a href="#" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
+    <i class="fa-brands fa-instagram"></i>
+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/10 mt-10 pt-6 text-center text-xs text-gray-500">
+                &copy; 2026 PETROSUL. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>1

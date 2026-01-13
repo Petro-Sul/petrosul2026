@@ -1,0 +1,90 @@
+/* Custom Styles for nuances */
+
+/* Efeito de vidro */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Borda lateral verde escura */
+.tech-border {
+    border-left: 4px solid #006400;
+}
+
+/* Padrão de fundo */
+.bg-grid-pattern {
+    background-size: 20px 20px;
+}
+
+/* Gradiente principal */
+.hero-gradient {
+    background: linear-gradient(135deg, #013220 0%, #006400 60%, #004d00 100%);
+}
+
+/* Justificar texto mantendo a última linha à esquerda */
+.text-justify-last-left {
+    text-align: justify;
+    text-align-last: left;
+}
+
+/* Rolagem suave na página */
+html { 
+    scroll-behavior: smooth; 
+}
+
+/* Faixa com as cores do RS */
+.rs-ribbon {
+    height: 4px;
+    background: linear-gradient(90deg, #006400 33%, #CE1126 33%, #CE1126 66%, #FFD700 66%);
+}
+
+/* --- ESTILOS DA SEÇÃO SOBRE (Atualizado para Mobile) --- */
+
+.sobre {
+  margin-top: 40px;
+  background-color: #336e57;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  /* Mobile First: Padding menor para telas pequenas */
+  padding: 40px 20px; 
+}
+
+.sobre h2 {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+.sobre p {
+  font-size: 1em;
+  line-height: 1.6;
+  text-align: justify;
+  /* IMPORTANTE: No mobile, margem zero ou pequena nas laterais */
+  margin: 0 0 15px 0; 
+}
+
+/* Estilo para computadores (Telas maiores que 768px) */
+@media (min-width: 768px) {
+    .sobre {
+        margin-top: 60px;
+        padding: 60px 50px; /* Padding maior no PC */
+    }
+
+    .sobre h2 {
+        font-size: 2em;
+        margin-bottom: 40px;
+    }
+
+    .sobre p {
+        font-size: 1.1em;
+        /* Limita a largura do texto para não ficar muito esticado no PC */
+        max-width: 900px; 
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+}
